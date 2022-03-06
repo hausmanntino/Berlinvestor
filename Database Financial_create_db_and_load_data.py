@@ -91,9 +91,9 @@ def load_data_to_database(filename, API_KEY):
     # Defining SQL ALCHEMY ENGINE #
     ###############################
 
-    engine= create_engine("mysql+pymysql://{user}:{pw}@"HOST_NAME"/{db}"
-                         .format(user = USER,
-                                pw = USER_PASSWORD,
+    engine= create_engine("mysql+pymysql://{user}:{pw}@"HOST_NAME"/{db}" # <- here
+                         .format(user = USER, # <- here
+                                pw = USER_PASSWORD, # <- here
                                 db = "financial"))
 
     
