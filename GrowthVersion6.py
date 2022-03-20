@@ -58,4 +58,4 @@ def GrowthV6(filename, API_key):
     dfGV6 = pd.Series(GV6list)
     dfGV6.to_csv('Screened_'+filename)
 
-GrowthV6(CSV-File, API_key)
+GrowthV6(CSV-File, API_key) # <- add CSV-File and API_key here
