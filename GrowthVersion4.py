@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
 import pandas as pd
 import requests
 
@@ -57,16 +54,5 @@ def GrowthV4(filename, API_key):
             continue
     dfGV4 = pd.Series(GV4list)
     dfGV4.to_csv('Screened_'+filename)
-
-
-# In[3]:
-
-
+    
 GrowthV4(CSF-File, API_key) # <- add CSV-File and API-key here
-
-
-# In[ ]:
-
-
-
-
